@@ -1,3 +1,4 @@
+/* haut de page */
 html{
     background-color: #7296becb;
     font-family: Arial, Verdana, sans-serif;
@@ -19,7 +20,7 @@ p.paragraphe{
     padding-left: 15px;
 }
 
-/* ------------------------navigation------------------------- */
+/* navigation */
 
 nav.menu-nav ul li.btn{
 	list-style-type: none;
@@ -53,7 +54,7 @@ nav.menu-nav ul li.btn a.page{
 	padding: 7px;
 }
 
-/* -----------------------div inscription / connection------------------------- */
+/* div inscription / connection */
 div.center{
     text-align: center;
 }

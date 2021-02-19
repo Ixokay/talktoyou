@@ -1,3 +1,5 @@
+/* css pour les petits écran */
+
 @media (max-width: 640px) {
 	* {
 		box-sizing: border-box;

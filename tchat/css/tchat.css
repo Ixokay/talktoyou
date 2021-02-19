@@ -1,3 +1,4 @@
+/* haut de page */
 html{
     background-color: #4c81bda6;
     font-family: Arial, Verdana, sans-serif;
@@ -20,6 +21,7 @@ h3.titre{
     border-bottom: solid 3px;
     border-color: #c7d1e0;
 }
+/* bouton compte */
 input.bouton{
     margin-top: 10px;
     color: #3a69af;
@@ -37,7 +39,7 @@ p.textenter{
     margin-left: 20px;
     margin-top: 10px;
 }
-/* --------------zone de message------------------ */
+/* zone de affiche message */
 
 form.messageenter{
     padding-left: 20px;
@@ -98,7 +100,7 @@ img{
     margin-bottom: -3px;
 }
 
-/* --------------------Envoie de messange--------------------- */
+/* Envoie de messange */
 a{
     margin-left: 20px;
 }

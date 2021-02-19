@@ -1,3 +1,4 @@
+<!-- formulaire connexion -->
 <div class="center">
     <div class="inscription-connection">
         <h2 class="titre">Connecte toi !</h2>
@@ -17,7 +18,7 @@
     global $db;        
     if(isset($_POST['formsend'])){
         extract($_POST);    
-        
+        // php conexion
         if(!empty($email) && !empty($passe)){
 
             $qemail = $db->prepare("SELECT * FROM users WHERE email = :email");
@@ -28,6 +29,7 @@
                 $qpseudo = $db->prepare("SELECT * FROM users WHERE email = :email");
                 $qpseudo->execute(['email' => $email]);
                 $resultpseudo = $qpseudo->fetch();
+                // decryptage mot de passe
                 if(password_verify($passe, $result['passe'])){
                     ?> <h2 class="titre">Le mot de passe est correct !</h2> <?php
                     $_SESSION['pseudo'] = $resultpseudo['pseudo'];

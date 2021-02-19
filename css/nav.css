@@ -1,3 +1,4 @@
+/* haut de page */
 html{
     background-color: #7296becb;
     font-family: Arial, Verdana, sans-serif;
@@ -23,6 +24,8 @@ p.textenter{
     margin-left: 20px;
     margin-top: 10px;
 }
+
+/* bouton compte */
 input.bouton{
     color: #3a69af;
     margin-left: 20px;
@@ -35,8 +38,7 @@ input{
     margin-left: 20px;
 }
 
-/* ------------------------navigation------------------------- */
-
+/* navigation */
 nav.menu-nav ul li.btn{
 	list-style-type: none;
     display: inline-block;
@@ -58,6 +60,8 @@ nav.menu-nav ul li.btn a.page{
 	background-color: #3a69af;
 	padding: 7px;
 }
+
+/* liste tchat créer */
 div.navtchat{
     display: flex;
     text-align: center;

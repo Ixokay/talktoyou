@@ -1,3 +1,4 @@
+<!-- formulaire inscription -->
 <div class="center">
     <div class="inscription-connection">
         <h2 class="titre">Inscris toi !</h2>
@@ -20,9 +21,10 @@
     if(isset($_POST['formsend'])){
 
         extract($_POST);
-        
+        // php inscription 
         if(!empty($pseudo) && !empty($passe) && !empty($newpasse) && !empty($email)){
             if($passe == $newpasse){
+                // cryptage du mot de passe
                 $options = [
                     'cost' => 12,
                 ];

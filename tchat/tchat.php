@@ -11,7 +11,7 @@
 
     <body>
         <?php 
-        include 'includes/database.php';
+        include '../includes/database.php';
         global $db;
         session_start();
         $qpseudo = $db->prepare("SELECT * FROM ban WHERE pseudo = :pseudo AND tchat = :tchat");
@@ -27,10 +27,13 @@
             'tchat' => 749027364
         ]);
         $banresult = $banpseudo->fetch();
-
+        // vérification connexion
         if(isset($_SESSION['pseudo'])) {
+            // vérification non ban du tchat
             if($result == false) {
+                // vérification ban du site
                 if($banresult == false) {
+                    // pour afficher que on est connecter
                     if($_SESSION['connect'] == true) {
                         $q = $db->prepare("INSERT INTO connecter(pseudo,tchat) VALUES(:pseudo,:tchat)");
                         $q->execute([
@@ -44,7 +47,7 @@
                         'tchat' => $_GET['tchat']
                     ]);
                     $resultniveau1op = $qniveau1op->fetch();
-
+                    // pour donner au premier visiteur du tchat le grade niveau1op
                     if($resultniveau1op == true){
 
                     }else {
@@ -57,12 +60,13 @@
                     ?>
                     
                     <button onclick="Compte()">Compte</button>
-
+                    <!-- bouton avec les options -->
                     <div id="hautDePage" style="display:none;" class="compteDeconnexion">
                         <?php include 'includes/boutontchat.php'; ?>
                     </div>
 
                     <script>
+                        // script quand bouton est appuyé
                         function Compte() {
                             var compteBoutton = document.getElementById("hautDePage");
                             var message = document.getElementById("basDePage");
@@ -82,22 +86,27 @@
                     $nom = $qnom->fetch();
                     $name = $nom['name'];
                     ?>
-                
+                    <!-- nom du tchat -->
                     <div id="basDePage" style="display:block;">
                         <h1 class="titre"><?php echo $name ?></h1>
 
                         <form method="post" action="" class="messageenter">
                             <label><input class="message" type="text" id="message" name="message" maxlength="220" size="30" placeholder=" Message"/></label>
                             <input class="boutonenvoi" type="submit" id="messagesend" name="messagesend" value="Envoyer"/>
+                            <!-- si un jour je fais l'envoie d'image -->
                             <!-- <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg, image/jpg">
                             <input class="boutonenvoi" type="submit" id="filesend" name="filesend" value="Envoyer"/> -->
                         </form>
+                        <!-- div pour si un jour je met des émojis -->
                         <div id="emojis">
                         </div>
+
                         <?php
+                        // zone pour envoyer les messages et commande 
                         include "includes/message.php";
                         ?>
 
+                        <!-- affichage des messages + utilisateur connecter -->
                         <div class="zonemessage" id="messages">
                             <?php
                             $_SESSION['tchat'] = $_GET['tchat'];
@@ -107,6 +116,7 @@
 
                     </div>
                 <?php
+                // si ban du site
                 }else {
                     ?>
                         <script type="text/javascript">
@@ -115,6 +125,7 @@
                         </script>
                     <?php
                 }
+            // si ban du tchat
             } else {
             ?>
                 <script type="text/javascript">
@@ -122,7 +133,8 @@
                     self.location.href='../nav.php';
                 </script>
             <?php
-            }       
+            }     
+        // si pas connecter redirection vers page de connexion  
         } else{
         ?>
             <script type="text/javascript">
@@ -132,6 +144,7 @@
         <?php
         }
         ?>
+        <!-- boucle pour afficher les messages sans reload -->
         <script>
             setInterval('load_messages()', 2000);
             function load_messages() {

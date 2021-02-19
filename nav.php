@@ -13,14 +13,16 @@
         session_start();
         include 'includes/database.php';
         global $db;
-        
+        // vérification connexion
         if(isset($_SESSION['pseudo'])){
         ?>
             <button onclick="Compte()">Compte</button>
+            <!-- bouton avec les optins -->
             <div id="hautDePage" style="display:none;" class="compteDeconnexion">
                 <?php include 'includes/boutonnav.php'; ?>
             </div>
             <script>
+                // script quand bouton est appuyé
                 function Compte() {
                     var compteBoutton = document.getElementById("hautDePage");
                     var message = document.getElementById("basDePage");
@@ -44,7 +46,7 @@
                     dès maintenant pour parler sans limite 
                     ou <b>connecte toi</b> si tu es déjâ inscrit !
                 </p>
-                
+                <!-- nav tchat public -->
                 <h2 class="titre">Choisis ton tchat</h2>
                 <nav class="menu-nav">
                     <ul>
@@ -72,7 +74,7 @@
                         </li>
                     </ul>
                 </nav>
-
+                <!-- formulaire pour rejoindre un tchat -->
                 <h2 class="titre">Rejoint un tchat</h2>
                 <nav class="menu-nav">
                     <ul>
@@ -93,7 +95,7 @@
                         </li>
                     </ul>
                 </nav>
-                
+                <!-- bouton pour créer un tchat avec l'argument tchat aléatoire -->
                 <h2 class="titre">Créer un tchat</h2>
                 <nav class="menu-nav">
                     <ul>
@@ -104,7 +106,7 @@
                         </li>
                     </ul>
                 </nav>
-
+                <!-- affiche liste de création des tchats -->
                 <h2 class="titre">Mes tchats</h2>
                 <nav class="menu-nav">
                     <ul>
@@ -134,6 +136,7 @@
             </div>
 
         <?php
+        // si pas connecter redirection vers page de connexion
         } else{
         ?>
             <script type="text/javascript">

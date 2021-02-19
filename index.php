@@ -21,7 +21,7 @@
             dès maintenant pour parler sans limite 
             ou <b>connecte toi</b> si tu es déjâ inscris !
         </p>
-        
+        <!-- navigation entre connexion et inscription -->
         <nav class="menu-nav">
             <ul>
                 <li class="btn">
@@ -38,6 +38,7 @@
         </nav>
 
         <?php
+            // php inscription 
             include 'includes/inscription.php';
         ?>
 
