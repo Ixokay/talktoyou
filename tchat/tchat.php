@@ -55,6 +55,12 @@
                         $q->execute([
                             'tchat' => $_GET['tchat'],
                             'pseudo' => $_SESSION['pseudo']
+                        ]);
+                        $q = $db->prepare("INSERT INTO chat(pseudo,message,tchat) VALUES(:pseudo,:message,:tchat)");
+                        $q->execute([
+                            'pseudo' => 'CONSOLE : Le numéro du tchat est',
+                            'message' => $_GET['tchat'],
+                            'tchat' => $_GET['tchat']
                         ]); 
                     }
                     ?>
