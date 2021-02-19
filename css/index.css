@@ -1,0 +1,81 @@
+html{
+    background-color: #7296becb;
+    font-family: Arial, Verdana, sans-serif;
+}
+h1.titre{
+    text-align: center;
+    border-bottom: solid 3px;
+    border-color: #c7d1e0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+h2.titre{
+    text-align: center;
+}
+h3.titre{
+    text-align: center;
+}
+p.paragraphe{
+    padding-left: 15px;
+}
+
+/* ------------------------navigation------------------------- */
+
+nav.menu-nav ul li.btn{
+	list-style-type: none;
+    display: inline-block;
+}
+nav.menu-nav ul li.btn:hover a.autre{
+	color: black;
+	background-color: #f0f0f0;
+	transition: 0.3s all;
+}
+nav.menu-nav ul li.btn:hover a.page{
+	color: black;
+	background-color: #f0f0f0;
+	transition: 0.3s all;
+}
+nav.menu-nav ul li.btn a.autre{
+	text-decoration: none;
+	color: white;
+	background-color: #3B3A3A;
+	padding: 7px;
+}
+nav.menu-nav{
+    margin-left: -35px;
+    text-align: center;
+    margin-top: 40px;
+}
+nav.menu-nav ul li.btn a.page{
+	text-decoration: none;
+	color: white;
+	background-color: #3a69af;
+	padding: 7px;
+}
+
+/* -----------------------div inscription / connection------------------------- */
+div.center{
+    text-align: center;
+}
+div.inscription-connection{
+    border-top: solid 4px #3a69af;
+    padding-top: 1px;
+    padding-bottom: 20px;
+    display: inline-block;
+    width: 400px; 
+    margin-top: 10px;
+    background-color: #f0f0f0;
+}
+label{
+    padding: 5px;
+    display: inline-block;
+}
+input.bouton{
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+p.center{
+    text-align: center;
+}

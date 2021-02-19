@@ -1,0 +1,111 @@
+html{
+    background-color: #4c81bda6;
+    font-family: Arial, Verdana, sans-serif;
+    min-width: 400px;
+}
+h1.titre{
+    text-align: center;
+    border-bottom: solid 3px;
+    border-color: #c7d1e0;
+    margin-top: -5px;
+}
+h2.titre{
+    text-align: center;
+}
+h3.titre{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: -20px;
+    padding: 5px;
+    border-bottom: solid 3px;
+    border-color: #c7d1e0;
+}
+input.bouton{
+    margin-top: 10px;
+    color: #3a69af;
+}
+button{
+    color: #3a69af;
+    color: -internal-light-dark(#3a69af, white);
+    border-radius: 4px;
+}
+p.paragraphe{
+    padding-left: 15px;
+    margin-right: 10px;
+}
+p.textenter{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+/* --------------zone de message------------------ */
+
+form.messageenter{
+    padding-left: 20px;
+}
+div.zonemessage{
+    width: 99%;
+    height: 100%;
+    margin: 10px;
+    display: inline-flex;
+}
+div.floatright{
+    float: right;
+    margin-bottom: -10px;
+}
+div.floatleft{
+    margin-bottom: -10px;
+}
+div.textcouleur1{
+    background-color: #24232328;
+    display: inline-block;
+    padding: 3px;
+    margin: 1px;
+    margin-left: 5px;
+    border-radius: 10px;
+
+}
+div.textcouleur2{
+    
+    background-color: #2c5fac44;
+    display: inline-block;
+    padding: 3px;
+    margin: 1px;
+    margin-right: 5px;
+    border-radius: 10px;
+
+}
+div.listetchat{
+    background-color: #99b3cf;
+    width: 100%;
+    height: 572;
+    padding: 5px;
+    margin-right: 10px;
+    border: solid 3px;
+    border-radius: 10px;
+}
+div.listeUtilisateur{
+    background-color: #99b3cf;
+    
+    height: 572px;
+    padding: 5px;
+    border: solid 3px;
+    border-radius: 10px;
+}
+div.usersconnecter:hover{
+    background-color: #3a69af1f;
+}
+img{
+    margin-bottom: -3px;
+}
+
+/* --------------------Envoie de messange--------------------- */
+a{
+    margin-left: 20px;
+}
+input{
+    margin-left: 10px;
+    border-radius: 4px;
+}
+label{
+    margin-left: 20px;
+}

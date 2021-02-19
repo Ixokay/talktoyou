@@ -1,0 +1,115 @@
+E-mail pour se co                               ok
+/liste                                          ok
+Affiché qui est op                              ok
+Affiché connexion deconnexion                   ok
+mettre le texte en couleur                      ok
+pouvoir supprimer son dernier message           ok
+nom du tchat N                                  ok
+enlevé la date                                  ok
+vidé la table connecter                         ok
+/ban                                            ok                                     
+bulle à coté du pseudo                          ok
+connexion / inscription pas de taille           ok
+Vider la table de connexion                     ok
+connecter --> connecté                          ok
+juste les personnes co a affiché                ok
+supprimé les 2 premier compte à flavien         ok 
+pour op mettre niveau1op quelqu'un              ok
+pour op enlevé niveau1op de quelqu'un           ok    
+bannir de tous les tchats                       ok
+afficher niveua 1 op pour op                    ok
+
+
+
+
+// Change de couleur quand change d'utilisateur
+
+// $_SESSION['nombre'] = true;
+// $_SESSION['couleur'] = 1;
+// $_SESSION['user'] = '';
+// $_SESSION['newuser'] = '';
+// while($msg = $allmsg->fetch()){
+//     $_SESSION['newuser'] = $msg['pseudo'];
+//     if($_SESSION['nombre'] == true) {
+//         ?><br><?php
+//         echo $msg['date'];
+//         ?><div class="textcouleur1"><b><?php 
+//             echo $msg['pseudo']; ?></b><?php 
+//             echo ' : ';
+//             echo $msg['message']; ?><br><?php
+//         ?></div><?php
+//         $_SESSION['user'] = $msg['pseudo'];
+//         $_SESSION['nombre'] = false;
+//     }else if($_SESSION['user'] == $_SESSION['newuser']) {
+//         if($_SESSION['couleur'] == 1) {
+//             ?><br><?php
+//             echo $msg['date'];
+//             ?><div class="textcouleur1"><b><?php 
+//                 echo $msg['pseudo']; ?></b><?php 
+//                 echo ' : ';
+//                 echo $msg['message']; ?><br><?php
+//             ?></div><?php
+//         }else if($_SESSION['couleur'] == 2) {
+//             ?><br><?php
+//             echo $msg['date'];
+//             ?><div class="textcouleur2"><b><?php 
+//                 echo $msg['pseudo']; ?></b><?php 
+//                 echo ' : ';
+//                 echo $msg['message']; ?><br><?php
+//             ?></div><?php
+//         } 
+//     }else {
+//         if($_SESSION['couleur'] == 1) {
+//             ?><br><?php
+//             echo $msg['date'];
+//             ?><div class="textcouleur2"><b><?php 
+//                 echo $msg['pseudo']; ?></b><?php 
+//                 echo ' : ';
+//                 echo $msg['message']; ?><br><?php
+//             ?></div><?php
+//             $_SESSION['user'] = $msg['pseudo'];
+//             $_SESSION['couleur'] = 2;
+//         }else if($_SESSION['couleur'] == 2) {
+//             ?><br><?php
+//             echo $msg['date'];
+//             ?><div class="textcouleur1"><b><?php 
+//                 echo $msg['pseudo']; ?></b><?php 
+//                 echo ' : ';
+//                 echo $msg['message']; ?><br><?php
+//             ?></div><?php
+//             $_SESSION['user'] = $msg['pseudo'];
+//             $_SESSION['couleur'] = 1;
+//         } 
+//     }
+// }
+
+---------------------------------------------------------------------------------------------------
+
+// Une couleur sur deux
+        
+// $couleur = 1;
+// while($msg = $allmsg->fetch()){
+//     if($couleur%2) {
+//         ?><br><?php
+//         echo $msg['date'];
+//         echo ' ';
+//         ?><div class="textcouleur1"><?php
+//             ?> <b> <?php 
+//             echo $msg['pseudo']; ?></b><?php 
+//             echo ' : ';
+//             echo $msg['message']; ?><br><?php
+//         ?></div><?php
+//         $couleur = $couleur + 1;
+//     }else {
+//         ?><br><?php
+//         echo $msg['date'];
+//         echo ' '; 
+//         ?><div class="textcouleur1"><?php
+//             ?> <b> <?php 
+//             echo $msg['pseudo']; ?></b><?php 
+//             echo ' : ';
+//             echo $msg['message']; ?><br><?php
+//         ?></div><?php
+//         $couleur = $couleur + 1;
+//     }
+// }
