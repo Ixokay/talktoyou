@@ -1,23 +1,23 @@
-E-mail pour se co                               ok
-/liste                                          ok
-Affiché qui est op                              ok
-Affiché connexion deconnexion                   ok
-mettre le texte en couleur                      ok
-pouvoir supprimer son dernier message           ok
-nom du tchat N                                  ok
-enlevé la date                                  ok
-vidé la table connecter                         ok
-/ban                                            ok                                     
-bulle à coté du pseudo                          ok
-connexion / inscription pas de taille           ok
-Vider la table de connexion                     ok
-connecter --> connecté                          ok
-juste les personnes co a affiché                ok
-supprimé les 2 premier compte à flavien         ok 
-pour op mettre niveau1op quelqu'un              ok
-pour op enlevé niveau1op de quelqu'un           ok    
-bannir de tous les tchats                       ok
-afficher niveua 1 op pour op                    ok
-supprimer tchat qu'on veut plus                 ok
-
-
+E-mail pour se co                                                   ok
+/liste                                                              ok
+Affiché qui est op                                                  ok
+Affiché connexion deconnexion                                       ok
+mettre le texte en couleur                                          ok
+pouvoir supprimer son dernier message                               ok
+nom du tchat N                                                      ok
+enlevé la date                                                      ok
+vidé la table connecter                                             ok
+/ban                                                                ok                                     
+bulle à coté du pseudo                                              ok
+connexion / inscription pas de taille                               ok
+Vider la table de connexion                                         ok
+connecter --> connecté                                              ok
+juste les personnes co a affiché                                    ok
+supprimé les 2 premier compte à flavien                             ok 
+pour op mettre niveau1op quelqu'un                                  ok
+pour op enlevé niveau1op de quelqu'un                               ok    
+bannir de tous les tchats                                           ok
+afficher niveua 1 op pour op                                        ok
+supprimer tchat qu'on veut plus                                     ok
+commentaire                                                         ok
+message à la création du tchat pour donner le numéro du tchat       ok
